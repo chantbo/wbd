@@ -1,10 +1,19 @@
+from math import degrees
+
 class Angle():
-    def __init__(self):
-        #self.angle = ...       set to 0 degrees 0 minutes
-        pass
     
+    def __init__(self, degrees = None, minutes = None):
+        self.degrees = degrees       #set to 0 degrees 0 minutes
+        degrees = 0
+                
+        self.minutes = minutes
+        minutes = 0
+                
     def setDegrees(self, degrees):
         pass
+        
+        
+        
     
     def setDegreesAndMinutes(self, degrees):
         pass
