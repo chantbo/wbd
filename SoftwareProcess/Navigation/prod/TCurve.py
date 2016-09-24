@@ -90,3 +90,4 @@ class TCurve(object):
             s = s * 2   #doubles the number of slices to account for close enough
             
         return simpsonNew
+    
