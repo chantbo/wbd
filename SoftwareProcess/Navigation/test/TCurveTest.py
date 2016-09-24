@@ -159,6 +159,11 @@ class TCurveTest(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             myT.p(t=self.nominalT, tails=0)
 
+    def test600_000_ShouldCalculateIntegral(self):
+        def f(u,n):
+            return u
+        myT = T.TCurve(self.nominalN)
+        self.assertAlmostEquals(myT.integrate(1.0, 50, f), 0.50, 3)
 #--------------------------------------------------------------------
 # Architecture:
 #    p -> calculateConstant
