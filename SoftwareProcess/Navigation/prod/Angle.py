@@ -128,7 +128,7 @@ class Angle():
 
         print self.degrees
         print self.minutes
-        return self
+        return (self.degrees + self.minutes)
     
     def add(self, angleAdd):
         originalDegree = self.degrees
@@ -264,7 +264,7 @@ class Angle():
                 return c        
      
     def getString(self):
-        self.degrees = 700
+        #self.degrees = 700
         degree = self.degrees
         #print degree
         
@@ -361,7 +361,7 @@ class Angle():
     
         self.newString =  ("%.1f" % exampleVar)
         print self.newString
- 
+        return self
 
     
     

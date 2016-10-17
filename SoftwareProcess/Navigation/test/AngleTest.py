@@ -7,7 +7,7 @@ myAngle = Ang.Angle()
 #x = myAngle.setDegrees(-10)
 #print x.degrees
 
-x = myAngle.setDegreesAndMinutes("-10d1")    
+x = myAngle.setDegreesAndMinutes("100d85")    
 print x.degrees
 print x.minutes
 
